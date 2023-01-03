@@ -8,7 +8,7 @@ export class EventInfo implements IPool {
     free() {
         this.callback = null;
         this.target = null;
-        this.once = false;
+        this.once = false; 
     }
 
     init(callback: Function, target: Object, once: boolean) {
